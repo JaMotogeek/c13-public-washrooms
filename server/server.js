@@ -1,6 +1,6 @@
 import express from 'express'
 import showRequests from './showRequests.js'
-import washroomsController from './washroom/washroomController.js'
+import washroomController from './washroom/washroomController.js'
 
 
 const port = process.env.PORT || 3000
@@ -10,7 +10,7 @@ app.use(showRequests)
 app.use(express.static('../public_html'))
 app.use(express.json())
 
-app.use('/api/washrooms', washroomController)
+app.use('/api/washroom', washroomController)
 
 
 app.listen(port, () => {
