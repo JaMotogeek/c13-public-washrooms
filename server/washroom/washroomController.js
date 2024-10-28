@@ -14,7 +14,7 @@ router.get('/:id', async function (req, res) {
         else {
             res.send(washroom)
         }import { Router } from "express";
-        import { createWashroom as createWashroom, findAllWashrooms as findAllWashrooms, findWashroomById as findWashroomById } from "./superheroData.js";
+        import { createWashroom as createWashroom, findAllWashrooms as findAllWashrooms, findWashroomById as findWashroomById } from "./washroomData.js";
         
         const router = Router()
         
