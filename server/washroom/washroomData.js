@@ -18,7 +18,7 @@ export async function findWashroomsById(id) {
     return singleWashroom
 }
 
-export async function createWashroom(data) {
+export async function createWashrooms(data) {
     const washroomCollection  = await collection('washrooms')
     const insertResult = await washroomCollection.insertOne(data)
     console.log('Inserted Washroom ', insertResult.insertedId)
