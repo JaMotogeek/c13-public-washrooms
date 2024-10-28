@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { createWashroom, findAllWashrooms, findWashroomsById } from "./washroomData.js";
+import { createWashrooms, findAllWashrooms, findWashroomsById } from "./washroomData.js";
 
 const router = Router()
 
